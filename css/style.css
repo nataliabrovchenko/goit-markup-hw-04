@@ -107,6 +107,9 @@ margin-right: 50px;
 .nav-link:focus {
     color: var(--accent-color);
 }
+.nav-list .current {
+    color: var(--accent-color);
+}
 .contacts-menu {
     display: flex;
     align-items: center;
@@ -124,27 +127,19 @@ margin-right: 50px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.contacts:hover,
-.contacts:focus {
-    color: var(--accent-color);
-}
-.nav-list .current {
-    color: var(--accent-color);
-}
 .icon-envelope {
     vertical-align: middle;
     margin-right: 10px;
-    fill: var(--title-text-color);   
+    fill: currentColor;   
 }
 .icon-smartphone {
     vertical-align: middle;
     margin-right: 10px;
-    fill: var(--title-text-color);
+    fill: currentColor;
 }
-.icon-envelope:hover,
-.icon-envelope:focus,
-.icon-smartphone:hover,
-.icon-smartphone:focus {
+.contacts:hover, .icon-envelope:hover,
+.contacts:focus, .icon-envelope:focus {
+    color: var(--accent-color);
     fill: var(--accent-color);
 }
 
